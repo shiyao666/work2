@@ -1,0 +1,969 @@
+reset
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+*{
+  color: #365712;
+}
+@font-face{
+  font-family: icon;
+  src: url(../src/img3/csi.woff);
+}
+*{
+  z-index: 1;
+}
+
+.container{
+  background-image: url(../src/img3/bg2.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  z-index: -1;
+
+}
+/* nav 部分 右上角logo */
+.top_img{
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  
+}
+/* nav padding 媒体查询 */
+@media screen and (max-width:768px){
+  .nav{
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .nav{
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .nav{
+    padding-top: 120px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+  .nav{
+    padding-top: 150px;
+  }
+}
+
+
+/* nav 小文字体 */
+.nav span{
+  /* color: rgb(118, 25, 131); */
+  font: 14px "Microsoft Yahei";
+  padding-bottom: 4px;
+}
+.nav .nav_span{
+  font-size: 1.2rem;
+}
+.nav h1{
+  font:3rem "Microsoft Yahei";
+}
+.nav h1 span {
+  font-size: 2.5rem;
+  color: #db8000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+  .nav .nav_span{
+    font-size: 2rem;
+  }
+  .nav h1{
+    font-size: 4rem;
+  }
+  .nav h1 span{
+    font-size: 5rem;
+  }
+  
+}
+/* nav第一个span */
+.nav_span{
+  border-bottom: 3px solid rgb(10, 110, 110);
+}
+/* 最上侧的两个模块合体div 媒体查询 */
+.top_big{
+    display: block;
+    padding-left: 60px;
+    padding-top: 120px;
+}
+/* 最上边的左边、右边和下中边div 样式 */
+.top_left,.top_center,.top_right{
+    display: block;
+    width: 42%;
+    box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 30px 40px;
+    height: 260px;
+    background: #fff;
+}   
+.top_left h2,.top_center h2,.top_right h2{
+    padding-bottom: 10px;
+    border-bottom: 4px solid #db8000;
+    padding-left: 50px;
+    font: 2rem "Microsoft Yahei";
+    font-weight: bold;
+}
+.top_left{
+    margin-right: 50px;
+}
+.top_before1{
+    position: relative;
+}
+.top_before2{
+    position: relative;
+}
+.top_before3{
+    position: relative;
+}
+.top_before1::before{
+    font-family: icon;
+    font-size: 36px;
+    color: #db8000;
+    content: "\e025";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top_before2::before{
+    font-family: icon;
+    font-size: 38px;
+    color: #db8000;
+    content: "\e024";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.top_before3::before{
+    font-family: icon;
+    font-size: 24px;
+    color: #db8000;
+    content: "\e026";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top_center{
+    margin: auto;
+}
+/* 第一个大title */
+.title_1 span {
+    display: block;
+    color: #fff;
+    background: #db8000;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.title_1 h1{
+    font: 3rem "Microsoft Yahei";
+  }
+@media screen and (max-width: 768px){
+    .title_1{
+      padding-top: 40px;
+      }
+.title_1 span {
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+}
+.title_1 h1{
+    font-size: 2rem;
+}
+}
+@media screen and (min-width: 768px){
+.title_1{
+    padding-left: 50px;
+    padding-top: 80px;
+}
+.title_1 span {
+    width: 150px;
+    height: 50px;
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+
+}
+
+
+@media screen and (max-width:768px){
+    .top_left h2,.top_center h2,.top_right h2{
+        font: 1.5rem "Microsoft Yahei";
+    }
+    .top_big{
+        padding-left: 0;
+        padding-top: 90px;
+    }
+    .top_left{
+        margin-right: 20px;
+    }
+    .top_big2{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+    
+    .top_left h2,.top_center h2,.top_right h2{
+        font: 1.5rem "Microsoft Yahei";
+    }
+    .top_left,.top_center,.top_right{
+        width: 46%;
+    }
+    .top_big{
+        padding-left: 0;
+        padding-top: 90px;
+    }
+    .top_left{
+        margin-right: 20px;
+    }
+    .top_big2{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+    .top_left h2,.top_center h2,.top_right h2{
+        font: 2rem "Microsoft Yahei";
+        
+    }
+    .top_left,.top_center,.top_right{
+        width: 46%;
+    }
+    .top_big{
+        padding-left: 0;
+        padding-top: 90px;
+    }
+    .top_left{
+        margin-right: 20px;
+    }
+    .top_big2{
+        padding-top: 40px;
+    }
+}
+ @media screen and (min-width: 1240px) {
+    .top_left,.top_center,.top_right{
+        width: 46%;
+    }
+    .top_big{
+        padding-left: 0;
+        padding-top: 240px;
+    }
+    .top_left{
+        margin-right: 20px;
+    }
+    .top_big2{
+        padding-top: 50px;
+        padding-bottom: 160px;
+    }
+}
+ @media screen and (max-width:768px){
+    .top_left,.top_right{
+        float: left;
+    }
+    .mid{
+        padding-left: 80px;
+       padding-top: 100px;
+    }
+    .mid_left{
+       margin-top: 80px; 
+      
+    }
+    .mid_center{
+        margin-top: -20px;
+    }
+    .mid_right{
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+    .top_left,.top_right{
+        float: left;
+    }
+    .mid{
+        padding-left: 80px;
+       padding-top: 140px;
+    }
+    .mid_left{
+       margin-top: 90px; 
+      
+    }
+    .mid_center{
+        margin-top: -40px;
+    }
+    .mid_right{
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+    .top_left,.top_right{
+        float: left;
+    }
+    .mid{
+        padding-left: 80px;
+       padding-top: 100px;
+    }
+    .mid_left{
+       margin-top: 80px; 
+      
+    }
+    .mid_center{
+        margin-top: -20px;
+    }
+    .mid_right{
+        margin-top: 30px;
+    }
+}
+ @media screen and (min-width: 1240px) {
+
+    .top_left,.top_right{
+        float: left;
+    }
+    .mid{
+        padding-left: 80px;
+       padding-top: 100px;
+    }
+    .mid_left{
+       margin-top: 80px; 
+      
+    }
+    .mid_center{
+        margin-top: -20px;
+    }
+    .mid_right{
+        margin-top: 30px;
+    }
+}
+.top_right{
+    margin-top: 30px;
+}
+.mid_left,.mid_center,.mid_right{
+    display: block;
+    width: 30%;
+    float: left;
+} 
+.mid_center{
+    background-image: url(../src/img3/b18.png);
+}
+.mid_left,.mid_right{
+  background-image: url(../src/bg16.png);
+}
+.mid_left,.mid_center,.mid_right{
+    height: 300px; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 150px 50px 60px 25px;
+}
+@media  screen and(max-width:768px){
+  .mid_left p,.mid_center p,.mid_right p{
+    padding-left: 20px;
+  }
+}
+
+.mid_left p,.mid_center p,.mid_right p{
+   width: 150px;
+   height: 50px;
+   float: left;
+   text-align: center;
+}
+.bg_img1{
+
+}
+.bg_img1 img{
+    display: block;
+    width: 40px;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+}
+.bg_fff{
+  display: block;
+  width: 320px;
+  height: 240px;
+  padding-left: 10px;
+  padding-top: 20px;
+  background: #fff;
+}
+
+
+
+
+
+/* 第2/3个大 title */
+.title_2 h1{
+  font: 3rem "Microsoft Yahei";
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+@media screen and (min-width:992px){
+  .title_2 h1{
+    font-size: 4rem;
+  }
+  .title_1 h1{
+    font-size: 4rem;
+  }
+}
+/* 第2个title大标题 媒体查询 */
+@media screen and (min-width:1240px){
+  .mid_right  h2{
+    font-size: 2.5rem;
+  }
+} 
+@media screen and (max-width:768px){
+  .title_2{
+    padding-top: 50px;
+    padding-left: 400px;
+  }
+  .title_2 h1{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .title_2{
+    padding-top: 80px;
+    padding-left: 360px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .title_2{
+    padding-top: 120px;
+    padding-left: 500px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+
+  .title_2{
+    padding-top: 200px;
+    padding-left: 600px;
+  }
+}
+/*  第2个title大标题下的span 媒体查询*/
+.title_2 span{
+  display: block;
+  color: #fff;
+  background: #db8000;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:768px){
+  .title_2 span{
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+  }
+}
+/* 标题2下的 span 媒体查询 */
+@media screen and (min-width:768px) {
+  .title_2 span{
+    width: 150px;
+    height: 50px;
+    font-size: 3rem;
+    line-height: 50px;  }
+}
+/*中下三栏媒体查询 */
+@media screen and (max-width:768px){
+  .mid_bottom{
+    padding-top:30px;
+    padding-left: 200px;
+   
+   }
+   .mid_bottom1{
+     padding-top: 50px;
+     padding-left: 120px;
+   
+   }
+   .mid_bottom2{
+     padding-top: 50px;
+     padding-left: 50px;
+   
+   }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .mid_bottom{
+    padding-top:30px;
+    padding-left: 200px;
+   
+   }
+   .mid_bottom1{
+     padding-top: 50px;
+     padding-left: 120px;
+   
+   }
+   .mid_bottom2{
+     padding-top: 50px;
+     padding-left: 50px;
+   
+   }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .mid_bottom{
+    padding-top:30px;
+    padding-left: 400px;
+   
+   }
+   .mid_bottom1{
+     padding-top: 50px;
+     padding-left: 330px;
+   
+   }
+   .mid_bottom2{
+     padding-top: 50px;
+     padding-left: 200px;
+   
+   }
+}
+ @media screen and (min-width: 1240px) {
+.mid_bottom{
+ padding-top:30px;
+ padding-left: 480px;
+
+}
+.mid_bottom1{
+  padding-top: 50px;
+  padding-left: 270px;
+
+}
+.mid_bottom2{
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+}
+
+
+.bottom_div1{
+  position: relative;
+  display: block;
+}
+
+.bottom_div1::before{
+  display: block;
+  background-image: url(../src/img3/17.png);
+  content: "";
+  width: 63px;
+  height: 106px;
+  background-size: cover;
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: -7px;
+  left: -6px;
+}
+.bottom_div1{
+  display: block;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-left: 70px;
+  background: #fff;
+}
+.bottom_div1 span,p{
+  float: left;
+
+}
+
+.bottom_div1 p{
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: 42px;
+  margin-left: -36px;
+  line-height: 2rem;
+}
+.hr3{
+  display: block;
+  border-bottom: 2px solid #365712;
+  height: 2px;
+  width: 24px;
+  float: left;
+  margin-bottom: 10px;
+}
+.s_span1{
+  margin-top: 6px;
+  margin-left: -24px;
+}
+.bottom_div2::before{
+  background-image: url(../src/img3/18.png);
+}
+.bottom_div3::before{
+  background-image: url(../src/img3/19.png);
+}
+/* 左下三栏样式 */
+.bottom_3{
+  padding-left: 50px;
+  padding-bottom: 70px;
+ 
+}
+@media screen and (min-width:992px){
+ .bottom_3{
+   padding-right: 60px;
+ }
+ .bottom_4{
+   padding-right: 60px;
+ }
+}
+@media screen and (min-width:1240px){
+  .bottom_3{
+    padding-right: 160px;
+  }
+  .bottom_4{
+    padding-right: 160px;
+  }
+}
+.margin_top{
+
+  margin-top: 40px;
+}
+.radius{
+
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background: #db8000;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+.radius::before{
+  display: block;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background: #db8000;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: -14px;
+}
+.radius::after{
+  display: block;
+  width: 6px;
+  height: 20px;
+  content: "";
+  background: #db8000;
+  position: absolute;
+  top: -26px;
+  left: -8px;
+}
+.p_1{
+  border-top: 2px solid #db8000;
+  display: block;
+  width: 240px;
+  height: 80px;
+  margin-top: 20px;
+  padding: 20px 20px 0px 20px;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.p_1::before{
+  display: block;
+  width: 6px;
+  height: 160px;
+  content: "";
+  background: #db8000;
+  position: absolute;
+  top: 40px;
+  left: -7px;
+}
+.radius_2::after{
+  display: none;
+}
+.radius_3::after{
+  display: none;
+}
+.p_2{
+  height: 100px;
+}
+.p_3::before{
+  height: 92px;
+}
+.container .padding_bottom{
+  padding-bottom: 50px;
+}
+/* 下边（2002年）右侧 */
+.right_div{
+  float: right;
+  width: 360px;
+  height: 100px;
+  box-shadow:  0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  font-size: 2rem;
+  padding-left: 160px;
+  padding-top: 20px;
+  position: relative;
+  background: #fff;
+}
+.right_div::before{
+  display: block;
+ font-size: 48px;
+ font-family: icon;
+ content: "\e013";
+ position: absolute;
+ top: 0px;
+ left: 50px;
+ color: #fff;
+}
+.right_div1::before{
+  left:56px;
+}
+
+.right_div3::before{
+ 
+  left: 56px;
+}
+.right_div::after{
+  display: block;
+  content: "";
+  width: 78px;
+  height: 90px;
+  background-image: url(../src/img3/bgbig.png);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 34px;  
+ z-index: -1;
+}
+
+/* 右下边div 媒体查询 */
+@media screen and (max-width:768px){
+ .right_div{
+   width: 280px;
+   height: 80px;
+   font-size: 1.8rem;
+   padding-left: 120px;
+   padding-top: 20px;
+ }
+ .right_div::before{
+   font-size: 36px;
+   left:44px ;
+ }
+ /* 右侧第一个div */
+ .right_div::after{
+ width: 54px;
+ height: 62px;
+ background-image: url(../src/img3/bgsmall.png);
+ }
+  /* 右侧第2个div */
+ .right_div1::before{
+  left: 48px;
+}
+ /* 右侧第3个div */
+.right_div2::before{
+  
+  left: 44px;
+}
+ /* 右侧第4个div */
+.right_div3::before{
+ 
+  left: 48px;
+}
+}
+.right_div1::before{
+  content: "\e014";
+}
+.right_div2::before{
+  content: "\e015";
+}
+.right_div3::before{
+  content: "\e016";
+}
+.btm_h1{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.btm_h1 h1{
+  display: block;
+  text-align: center;
+  font: 3rem "Microsoft Yahei";
+  letter-spacing: 4px;
+  line-height: 3rem;
+}
+@media screen and (min-width:768px){
+  .btm_h1{
+    display: block;
+    padding-top: 50px;
+  }
+  .btm_h1 h1{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+.bottom_big{
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-image: url(../src/img3/26.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bottom_left{
+ display: block;
+ width: 200px;
+ height: 100px;
+ float: left;
+ padding: 1rem;
+ 
+ 
+}
+.bottom_left span{
+  color: #fff;
+}
+.bottom_right{
+  display: block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding: 1rem;
+}
+.bottom_top{
+  display: block;
+  text-align: center;
+}
+.bottom_down{
+  text-align: center;
+  font: 3rem "Microsoft Yahei";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部form样式 */
+.btm_div{
+  background: #365712;
+
+}
+.bottom_form{
+  margin:2rem 0;
+}
+.form_submit a{
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding:1rem;
+  background: #db8000;
+  color: #fff;
+}
+.form_submit a:hover{
+  color: #db8000;
+  background: #fff;
+}
+.form_name::before{
+  font-family: icon;
+  font-size: 21px;
+  content: '\e003';
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 7px;
+}
+.form_phone::before{
+  font-family: icon;
+  font-size: 32px;
+  content: '\e017';
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 8px;
+}
+.form_phone .getlogon{
+  position: absolute;
+  right: 0;
+  height: 2rem;
+  margin-top: -2.5rem;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  display: block;
+}
+.form_phone .getlogon::before{
+  font-family: icon;
+  font-size: 20px;
+  content: '\e011';
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -27px;
+}
+.btm_div input{
+  border:0;
+  outline: 0;
+  width: 100%;
+  padding:1rem 1rem 1rem 3rem;
+}
+
+body a:hover{
+  text-decoration: none;
+  
+}
+/* 底边form */
+
+/*媒体查询小medom */
+/* @media screen and (max-width:768px){
+
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+
+}
+ @media screen and (min-width: 1240px) {
+
+}
+/* 
+
+
+ */
+/* .top-img2 {
+  top: 4000px;
+} */ 
