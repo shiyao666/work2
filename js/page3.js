@@ -1,4 +1,4 @@
-$("body").on("click",".getlogon",function click1(){ 
+$("body").on("click", ".s2004getlogon", function click1() {
     var phonename = $("#name").val();
     var phone = $("#phone").val();
     $.ajax({
@@ -13,18 +13,18 @@ $("body").on("click",".getlogon",function click1(){
 
             if (msg.code == 10005) {
                 var time1 = 60;
-                $(".getlogon").removeClass;
-                $(".getlogon").html("(" + time1 + "秒)");
+                $(".s2004getlogon").removeClass;
+                $(".s2004getlogon").html("(" + time1 + "秒)");
                 setTime = setInterval(
                     function () {
                         if (time1 > 0) {
                             time1--;
-                            $(".getlogon").html("(" + time1 + "秒)");
-                            $(".getlogon").unbind("click", click1);
+                            $(".s2004getlogon").html("(" + time1 + "秒)");
+                            $(".s2004getlogon").unbind("click", click1);
                         } else {
-                            $(".getlogon").bind("click", click1);
-                            $(".getlogon").text("重新获取");
-                            $(".getlogon").removeAttr("disabled");
+                            $(".s2004getlogon").bind("click", click1);
+                            $(".s2004getlogon").text("重新获取");
+                            $(".s2004getlogon").removeAttr("disabled");
                             clearInterval(setTime);
 
                         }
@@ -41,7 +41,7 @@ $("body").on("click",".getlogon",function click1(){
 });
 
 
-$(".nowsubmit").bind("click",function sendMessage(){
+$(".s2004nowsubmit").bind("click", function sendMessage() {
 
     var uid = $('#phone').val();
     var name1 = $('#name').val();
@@ -52,7 +52,7 @@ $(".nowsubmit").bind("click",function sendMessage(){
         data: {
             "phone": uid,
             "code": name1,
-            "form_id":2
+            "form_id": 2
         },
         error: function () {
             return false;
@@ -61,12 +61,13 @@ $(".nowsubmit").bind("click",function sendMessage(){
             if (msg.code == 10009) {
                 $(".form").empty();
                 $("#newform").addClass("newform1"),
-                $("#newform").append("报名成功")
+                    $("#newform").append("报名成功")
             }
             alert(msg.message);
         }
     });
 });
+
 
 
 //记录页面进入的cookie
@@ -97,7 +98,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         token = getCookie("token");
-       
+
         $.ajax({
             type: 'POST',
 
@@ -106,10 +107,10 @@ $(document).ready(function () {
             dataType: "json",
             data: {
                 "token": token,
-                "form_id" :2
+                "form_id": 2
             },
             error: function (msg) {
-                console.log("error")
+
                 return false;
             },
             success: function (msg) {
@@ -122,3 +123,33 @@ $(document).ready(function () {
         });
     }, 5000);
 });
+
+// $(".s2004nowsubmit").hover(function () {
+//     $(".s2004bottom_big").animate({ left: '250px' });
+//     $("s2004bottom_big").animate({
+//         "width": "50px",
+//     }, "slow", function () {
+//         // return false;
+//     });
+// });
+// $(function () {
+
+//     $(".s2004nowsubmit").hover(function () {
+//         $(".s2004bottom_big").slideDown(5000, function () {
+//             alert("动画执行完毕！");
+//         });
+//     })
+
+
+//     $(".s2004nowsubmit").click(function () {
+//         slideUp();
+//         $(".s2004bottom_big").slideUp();
+//         $(".s2004bottom_big").slideUp(2000, function () {
+//             alert("动画执行完毕！");
+//         });
+//     })
+
+//     $(".s2004nowsubmit").click(function () {
+//         $(".s2004bottom_big").slideToggle(1000);
+//     })
+// })

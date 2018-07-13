@@ -8,7 +8,7 @@ li{list-style:none}
 img{border:0;vertical-align:middle} 
 table{border-collapse:collapse;border-spacing:0} 
 p{word-wrap:break-word}
-*{
+.a2001_body *{
   color: #365712;
 }
 @font-face{
@@ -18,106 +18,90 @@ p{word-wrap:break-word}
 *{
   z-index: 1;
 }
-
 .container{
-  background-image: url(../src/img3/bg2.jpg);
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
-
 }
-/* nav 部分 右上角logo */
-.top_img{
+.s2001_container{
+  background-image: url(../src/img3/bg2.jpg);
+}
+
+/* s2001_nav 部分 右上角logo */
+.s2001_topimg{
   width: 40%;
   position: absolute;
   top: 0;
   right: 0px;
   
 }
-/* nav padding 媒体查询 */
+/* s2001_nav padding 媒体查询 */
 @media screen and (max-width:768px){
-  .nav{
+  .s2001_nav{
     padding-top: 50px;
   }
 }
 @media screen and (min-width:768px) and (max-width: 992px ){
-  .nav{
+  .s2001_nav{
     padding-top: 100px;
   }
 }
 @media screen and (min-width:992px) and (max-width:1240px ){
-  .nav{
+  .s2001_nav{
     padding-top: 120px;
   }
 }
  @media screen and (min-width: 1240px) {
-  .nav{
+  .s2001_nav{
     padding-top: 150px;
   }
 }
 
 
-/* nav 小文字体 */
-.nav span{
+/* s2001_nav 小文字体 */
+.s2001_nav span{
   /* color: rgb(118, 25, 131); */
   font: 14px "Microsoft Yahei";
   padding-bottom: 4px;
 }
-.nav .nav_span{
+.s2001_nav .s2001_nav_span{
   font-size: 1.2rem;
 }
-.nav h1{
+.s2001_nav h1{
   font:3rem "Microsoft Yahei";
 }
-.nav h1 span {
+.s2001_nav h1 span {
   font-size: 2.5rem;
   color: #db8000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.s2001_nav h1 .s3003big_span{
+  color: #0a6e6e;
+}
 
 @media screen and (min-width:768px) {
-  .nav .nav_span{
+  .s2001_nav .s2001_nav_span{
     font-size: 2rem;
   }
-  .nav h1{
+  .s2001_nav h1{
     font-size: 4rem;
   }
-  .nav h1 span{
+  .s2001_nav h1 span{
     font-size: 5rem;
   }
   
 }
-/* nav第一个span */
-.nav_span{
+/* s2001_nav第一个span */
+.s2001_nav_span{
   border-bottom: 3px solid rgb(10, 110, 110);
 }
 /* 最上侧的两个模块合体div 媒体查询 */
-.top_big{
+.s2002top_big{
     display: block;
     padding-left: 60px;
     padding-top: 120px;
 }
 /* 最上边的左边、右边和下中边div 样式 */
-.top_left,.top_center,.top_right{
+.s2002top_left,.s2002top_center,.s2002top_right{
     display: block;
     width: 42%;
     box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
@@ -125,26 +109,26 @@ p{word-wrap:break-word}
     height: 260px;
     background: #fff;
 }   
-.top_left h2,.top_center h2,.top_right h2{
+.s2002top_left h2,.s2002top_center h2,.s2002top_right h2{
     padding-bottom: 10px;
     border-bottom: 4px solid #db8000;
     padding-left: 50px;
     font: 2rem "Microsoft Yahei";
     font-weight: bold;
 }
-.top_left{
+.s2002top_left{
     margin-right: 50px;
 }
-.top_before1{
+.s2002top_before1{
     position: relative;
 }
-.top_before2{
+.s2002top_before2{
     position: relative;
 }
-.top_before3{
+.s2002top_before3{
     position: relative;
 }
-.top_before1::before{
+.s2002top_before1::before{
     font-family: icon;
     font-size: 36px;
     color: #db8000;
@@ -153,7 +137,7 @@ p{word-wrap:break-word}
     top: 0;
     left: 0;
 }
-.top_before2::before{
+.s2002top_before2::before{
     font-family: icon;
     font-size: 38px;
     color: #db8000;
@@ -163,7 +147,7 @@ p{word-wrap:break-word}
     left: 0;
 
 }
-.top_before3::before{
+.s2002top_before3::before{
     font-family: icon;
     font-size: 24px;
     color: #db8000;
@@ -172,39 +156,39 @@ p{word-wrap:break-word}
     top: 0;
     left: 0;
 }
-.top_center{
+.s2002top_center{
     margin: auto;
 }
 /* 第一个大title */
-.title_1 span {
+.s2002title_1 span {
     display: block;
     color: #fff;
     background: #db8000;
     text-align: center;
     letter-spacing: 1px;
 }
-.title_1 h1{
+.s2002title_1 h1{
     font: 3rem "Microsoft Yahei";
   }
 @media screen and (max-width: 768px){
-    .title_1{
+    .s2002title_1{
       padding-top: 40px;
       }
-.title_1 span {
+.s2002title_1 span {
     width: 100px;
     height: 30px;
     font-size: 2rem;
 }
-.title_1 h1{
+.s2002title_1 h1{
     font-size: 2rem;
 }
 }
 @media screen and (min-width: 768px){
-.title_1{
+.s2002title_1{
     padding-left: 50px;
     padding-top: 80px;
 }
-.title_1 span {
+.s2002title_1 span {
     width: 150px;
     height: 50px;
     font-size: 3rem;
@@ -216,166 +200,166 @@ p{word-wrap:break-word}
 
 
 @media screen and (max-width:768px){
-    .top_left h2,.top_center h2,.top_right h2{
+    .s2002top_left h2,.s2002top_center h2,.s2002top_right h2{
         font: 1.5rem "Microsoft Yahei";
     }
-    .top_big{
+    .s2002top_big{
         padding-left: 0;
         padding-top: 90px;
     }
-    .top_left{
+    .s2002top_left{
         margin-right: 20px;
     }
-    .top_big2{
+    .s2002top_big2{
         padding-top: 40px;
     }
 }
 @media screen and (min-width:768px) and (max-width: 992px ){
     
-    .top_left h2,.top_center h2,.top_right h2{
+    .s2002top_left h2,.s2002top_center h2,.s2002top_right h2{
         font: 1.5rem "Microsoft Yahei";
     }
-    .top_left,.top_center,.top_right{
+    .s2002top_left,.s2002top_center,.s2002top_right{
         width: 46%;
     }
-    .top_big{
+    .s2002top_big{
         padding-left: 0;
         padding-top: 90px;
     }
-    .top_left{
+    .s2002top_left{
         margin-right: 20px;
     }
-    .top_big2{
+    .s2002top_big2{
         padding-top: 40px;
     }
 }
 @media screen and (min-width:992px) and (max-width:1240px ){
-    .top_left h2,.top_center h2,.top_right h2{
+    .s2002top_left h2,.s2002top_center h2,.s2002top_right h2{
         font: 2rem "Microsoft Yahei";
         
     }
-    .top_left,.top_center,.top_right{
+    .s2002top_left,.s2002top_center,.s2002top_right{
         width: 46%;
     }
-    .top_big{
+    .s2002top_big{
         padding-left: 0;
         padding-top: 90px;
     }
-    .top_left{
+    .s2002top_left{
         margin-right: 20px;
     }
-    .top_big2{
+    .s2002top_big2{
         padding-top: 40px;
     }
 }
  @media screen and (min-width: 1240px) {
-    .top_left,.top_center,.top_right{
+    .s2002top_left,.s2002top_center,.s2002top_right{
         width: 46%;
     }
-    .top_big{
+    .s2002top_big{
         padding-left: 0;
         padding-top: 240px;
     }
-    .top_left{
+    .s2002top_left{
         margin-right: 20px;
     }
-    .top_big2{
+    .s2002top_big2{
         padding-top: 50px;
         padding-bottom: 160px;
     }
 }
  @media screen and (max-width:768px){
-    .top_left,.top_right{
+    .s2002top_left,.s2002top_right{
         float: left;
     }
-    .mid{
+    .s2002mid{
         padding-left: 80px;
        padding-top: 100px;
     }
-    .mid_left{
+    .s2002mid_left{
        margin-top: 80px; 
       
     }
-    .mid_center{
+    .s2002mid_center{
         margin-top: -20px;
     }
-    .mid_right{
+    .s2002mid_right{
         margin-top: 30px;
     }
 }
 @media screen and (min-width:768px) and (max-width: 992px ){
-    .top_left,.top_right{
+    .s2002top_left,.s2002top_right{
         float: left;
     }
-    .mid{
+    .s2002mid{
         padding-left: 80px;
        padding-top: 140px;
     }
-    .mid_left{
+    .s2002mid_left{
        margin-top: 90px; 
       
     }
-    .mid_center{
+    .s2002mid_center{
         margin-top: -40px;
     }
-    .mid_right{
+    .s2002mid_right{
         margin-top: 40px;
     }
 }
 @media screen and (min-width:992px) and (max-width:1240px ){
-    .top_left,.top_right{
+    .s2002top_left,.s2002top_right{
         float: left;
     }
-    .mid{
+    .s2002mid{
         padding-left: 80px;
        padding-top: 100px;
     }
-    .mid_left{
+    .s2002mid_left{
        margin-top: 80px; 
       
     }
-    .mid_center{
+    .s2002mid_center{
         margin-top: -20px;
     }
-    .mid_right{
+    .s2002mid_right{
         margin-top: 30px;
     }
 }
  @media screen and (min-width: 1240px) {
 
-    .top_left,.top_right{
+    .s2002top_left,.s2002top_right{
         float: left;
     }
-    .mid{
+    .s2002mid{
         padding-left: 80px;
        padding-top: 100px;
     }
-    .mid_left{
+    .s2002mid_left{
        margin-top: 80px; 
       
     }
-    .mid_center{
+    .s2002mid_center{
         margin-top: -20px;
     }
-    .mid_right{
+    .s2002mid_right{
         margin-top: 30px;
     }
 }
-.top_right{
+.s2002top_right{
     margin-top: 30px;
 }
-.mid_left,.mid_center,.mid_right{
+.s2002mid_left,.s2002mid_center,.s2002mid_right{
     display: block;
     width: 30%;
     float: left;
 } 
-.mid_center{
+.s2002mid_center{
     background-image: url(../src/img3/b18.png);
 }
-.mid_left,.mid_right{
+.s2002mid_left,.s2002mid_right{
   background-image: url(../src/bg16.png);
 }
-.mid_left,.mid_center,.mid_right{
+.s2002mid_left,.s2002mid_center,.s2002mid_right{
     height: 300px; 
     background-repeat: no-repeat;
     background-size: contain;
@@ -383,28 +367,28 @@ p{word-wrap:break-word}
     padding: 150px 50px 60px 25px;
 }
 @media  screen and(max-width:768px){
-  .mid_left p,.mid_center p,.mid_right p{
+  .s2002mid_left p,.s2002mid_center p,.s2002mid_right p{
     padding-left: 20px;
   }
 }
 
-.mid_left p,.mid_center p,.mid_right p{
+.s2002mid_left p,.s2002mid_center p,.s2002mid_right p{
    width: 150px;
    height: 50px;
    float: left;
    text-align: center;
 }
-.bg_img1{
+/* .s2002bg_img1{
 
-}
-.bg_img1 img{
+} */
+.s2002bg_img1 img{
     display: block;
     width: 40px;
     position: absolute;
     left: 80px;
     top: 80px;
 }
-.bg_fff{
+.s2002bg_fff{
   display: block;
   width: 320px;
   height: 240px;
@@ -418,7 +402,7 @@ p{word-wrap:break-word}
 
 
 /* 第2/3个大 title */
-.title_2 h1{
+.s2002title_2 h1{
   font: 3rem "Microsoft Yahei";
 }
 @media screen and (min-width:768px) and (max-width:992px){
@@ -426,49 +410,49 @@ p{word-wrap:break-word}
     margin-bottom: 40px;
 }
 @media screen and (min-width:992px){
-  .title_2 h1{
+  .s2002title_2 h1{
     font-size: 4rem;
   }
-  .title_1 h1{
+  .s2002title_1 h1{
     font-size: 4rem;
   }
 }
 /* 第2个title大标题 媒体查询 */
 @media screen and (min-width:1240px){
-  .mid_right  h2{
+  .s2002mid_right  h2{
     font-size: 2.5rem;
   }
 } 
 @media screen and (max-width:768px){
-  .title_2{
+  .s2002title_2{
     padding-top: 50px;
     padding-left: 400px;
   }
-  .title_2 h1{
+  .s2002title_2 h1{
     font-size: 2rem;
   }
 }
 @media screen and (min-width:768px) and (max-width: 992px ){
-  .title_2{
+  .s2002title_2{
     padding-top: 80px;
     padding-left: 360px;
   }
 }
 @media screen and (min-width:992px) and (max-width:1240px ){
-  .title_2{
+  .s2002title_2{
     padding-top: 120px;
     padding-left: 500px;
   }
 }
  @media screen and (min-width: 1240px) {
 
-  .title_2{
+  .s2002title_2{
     padding-top: 200px;
     padding-left: 600px;
   }
 }
 /*  第2个title大标题下的span 媒体查询*/
-.title_2 span{
+.s2002title_2 span{
   display: block;
   color: #fff;
   background: #db8000;
@@ -476,7 +460,7 @@ p{word-wrap:break-word}
   letter-spacing: 1px;
 }
 @media screen and (max-width:768px){
-  .title_2 span{
+  .s2002title_2 span{
     width: 100px;
     height: 30px;
     font-size: 2rem;
@@ -484,7 +468,7 @@ p{word-wrap:break-word}
 }
 /* 标题2下的 span 媒体查询 */
 @media screen and (min-width:768px) {
-  .title_2 span{
+  .s2002title_2 span{
     width: 150px;
     height: 50px;
     font-size: 3rem;
@@ -492,68 +476,68 @@ p{word-wrap:break-word}
 }
 /*中下三栏媒体查询 */
 @media screen and (max-width:768px){
-  .mid_bottom{
+  .s2002mid_bottom{
     padding-top:30px;
     padding-left: 200px;
    
    }
-   .mid_bottom1{
+   .s2002mid_bottom1{
      padding-top: 50px;
      padding-left: 120px;
    
    }
-   .mid_bottom2{
+   .s2002mid_bottom2{
      padding-top: 50px;
      padding-left: 50px;
    
    }
 }
 @media screen and (min-width:768px) and (max-width: 992px ){
-  .mid_bottom{
+  .s2002mid_bottom{
     padding-top:30px;
     padding-left: 200px;
    
    }
-   .mid_bottom1{
+   .s2002mid_bottom1{
      padding-top: 50px;
      padding-left: 120px;
    
    }
-   .mid_bottom2{
+   .s2002mid_bottom2{
      padding-top: 50px;
      padding-left: 50px;
    
    }
 }
 @media screen and (min-width:992px) and (max-width:1240px ){
-  .mid_bottom{
+  .s2002mid_bottom{
     padding-top:30px;
     padding-left: 400px;
    
    }
-   .mid_bottom1{
+   .s2002mid_bottom1{
      padding-top: 50px;
      padding-left: 330px;
    
    }
-   .mid_bottom2{
+   .s2002mid_bottom2{
      padding-top: 50px;
      padding-left: 200px;
    
    }
 }
  @media screen and (min-width: 1240px) {
-.mid_bottom{
+.s2002mid_bottom{
  padding-top:30px;
  padding-left: 480px;
 
 }
-.mid_bottom1{
+.s2002mid_bottom1{
   padding-top: 50px;
   padding-left: 270px;
 
 }
-.mid_bottom2{
+.s2002mid_bottom2{
   padding-top: 50px;
   padding-left: 100px;
 
@@ -561,12 +545,12 @@ p{word-wrap:break-word}
 }
 
 
-.bottom_div1{
+.s2002bottom_div1{
   position: relative;
   display: block;
 }
 
-.bottom_div1::before{
+.s2002bottom_div1::before{
   display: block;
   background-image: url(../src/img3/17.png);
   content: "";
@@ -579,7 +563,7 @@ p{word-wrap:break-word}
   top: -7px;
   left: -6px;
 }
-.bottom_div1{
+.s2002bottom_div1{
   display: block;
   width: 300px;
   height: 200px;
@@ -588,19 +572,19 @@ p{word-wrap:break-word}
   padding-left: 70px;
   background: #fff;
 }
-.bottom_div1 span,p{
+.s2002bottom_div1 span,p{
   float: left;
 
 }
 
-.bottom_div1 p{
+.s2002bottom_div1 p{
   letter-spacing: 2px;
   position: absolute;
   margin-top: 42px;
   margin-left: -36px;
   line-height: 2rem;
 }
-.hr3{
+.s2002hr3{
   display: block;
   border-bottom: 2px solid #365712;
   height: 2px;
@@ -608,43 +592,43 @@ p{word-wrap:break-word}
   float: left;
   margin-bottom: 10px;
 }
-.s_span1{
+.s2002s_span1{
   margin-top: 6px;
   margin-left: -24px;
 }
-.bottom_div2::before{
+.s2002bottom_div2::before{
   background-image: url(../src/img3/18.png);
 }
-.bottom_div3::before{
+.s2002bottom_div3::before{
   background-image: url(../src/img3/19.png);
 }
 /* 左下三栏样式 */
-.bottom_3{
+.s2003bottom_3{
   padding-left: 50px;
   padding-bottom: 70px;
  
 }
 @media screen and (min-width:992px){
- .bottom_3{
+ .s2003bottom_3{
    padding-right: 60px;
  }
- .bottom_4{
+ .s2003bottom_4{
    padding-right: 60px;
  }
 }
 @media screen and (min-width:1240px){
-  .bottom_3{
+  .s2003bottom_3{
     padding-right: 160px;
   }
-  .bottom_4{
+  .s2003bottom_4{
     padding-right: 160px;
   }
 }
-.margin_top{
+.s2002margin_top{
 
   margin-top: 40px;
 }
-.radius{
+.s2003radius_1{
 
   display: block;
   width: 100px;
@@ -657,7 +641,11 @@ p{word-wrap:break-word}
   line-height: 30px;
   padding-bottom: 30px;
 }
-.radius::before{
+.s3001_body .s3003radius_1{
+  background: #0a6e6e;
+  color: #fff;
+}
+.s2003radius_1::before{
   display: block;
   width: 18px;
   height: 18px;
@@ -668,7 +656,11 @@ p{word-wrap:break-word}
   top: 6px;
   left: -14px;
 }
-.radius::after{
+.s3003radius_1::before{
+  background: #0a6e6e;
+ 
+}
+.s2003radius_1::after{
   display: block;
   width: 6px;
   height: 20px;
@@ -678,7 +670,10 @@ p{word-wrap:break-word}
   top: -26px;
   left: -8px;
 }
-.p_1{
+.s3003radius_1::after{
+  background: #0a6e6e;
+}
+.s2003p_1{
   border-top: 2px solid #db8000;
   display: block;
   width: 240px;
@@ -689,7 +684,10 @@ p{word-wrap:break-word}
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
   background-color: #fff;
 }
-.p_1::before{
+.s3003p_1{
+  border-top: 2px solid #0a6e6e;
+}
+.s2003p_1::before{
   display: block;
   width: 6px;
   height: 160px;
@@ -698,6 +696,9 @@ p{word-wrap:break-word}
   position: absolute;
   top: 40px;
   left: -7px;
+}
+.s3003p_1::before{
+  background: #0a6e6e;
 }
 .radius_2::after{
   display: none;
@@ -711,11 +712,11 @@ p{word-wrap:break-word}
 .p_3::before{
   height: 92px;
 }
-.container .padding_bottom{
+.container .s2003padding_bottom{
   padding-bottom: 50px;
 }
 /* 下边（2002年）右侧 */
-.right_div{
+.s2003right_divs{
   float: right;
   width: 360px;
   height: 100px;
@@ -727,7 +728,7 @@ p{word-wrap:break-word}
   position: relative;
   background: #fff;
 }
-.right_div::before{
+.s2003right_divs::before{
   display: block;
  font-size: 48px;
  font-family: icon;
@@ -737,76 +738,81 @@ p{word-wrap:break-word}
  left: 50px;
  color: #fff;
 }
-.right_div1::before{
+.s2003right_div1::before{
   left:56px;
 }
 
-.right_div3::before{
+.s2003right_div3::before{
  
   left: 56px;
 }
-.right_div::after{
+.s2003right_divs::after{
   display: block;
   content: "";
   width: 78px;
   height: 90px;
   background-image: url(../src/img3/bgbig.png);
-  background-size: contain;
+  background-size: cover ;
   position: absolute;
   top: 0;
   left: 34px;  
  z-index: -1;
 }
+ .s3003right_divs::after{
+
+   background-size: cover ;
+   background-image: url(../src/img3/21.png);
+}
 
 /* 右下边div 媒体查询 */
 @media screen and (max-width:768px){
- .right_div{
+ .s2003right_divs{
    width: 280px;
    height: 80px;
    font-size: 1.8rem;
    padding-left: 120px;
    padding-top: 20px;
  }
- .right_div::before{
+ .s2003right_divs::before{
    font-size: 36px;
    left:44px ;
  }
  /* 右侧第一个div */
- .right_div::after{
+ .s2003right_divs::after{
  width: 54px;
  height: 62px;
  background-image: url(../src/img3/bgsmall.png);
  }
   /* 右侧第2个div */
- .right_div1::before{
+ .s2003right_div1::before{
   left: 48px;
 }
  /* 右侧第3个div */
-.right_div2::before{
+.s2003right_div2::before{
   
   left: 44px;
 }
  /* 右侧第4个div */
-.right_div3::before{
+.s2003right_div3::before{
  
   left: 48px;
 }
 }
-.right_div1::before{
+.s2003right_div1::before{
   content: "\e014";
 }
-.right_div2::before{
+.s2003right_div2::before{
   content: "\e015";
 }
-.right_div3::before{
+.s2003right_div3::before{
   content: "\e016";
 }
-.btm_h1{
+.s2004btm_h1{
   display: block;
   padding-top: 30px;
   padding-bottom: 50px;
 }
-.btm_h1 h1{
+.s2004btm_h1 h1{
   display: block;
   text-align: center;
   font: 3rem "Microsoft Yahei";
@@ -814,17 +820,18 @@ p{word-wrap:break-word}
   line-height: 3rem;
 }
 @media screen and (min-width:768px){
-  .btm_h1{
+  .s2004btm_h1{
     display: block;
     padding-top: 50px;
   }
-  .btm_h1 h1{
+  .s2004btm_h1 h1{
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 
-.bottom_big{
+.s2004bottom_big{
+  position: relative;
   display: block;
   text-align: center;
   width: 300px;
@@ -834,7 +841,10 @@ p{word-wrap:break-word}
   background-size: contain;
   background-repeat: no-repeat;
 }
-.bottom_left{
+.s3004bottom_big{
+  background-image: url(../src/img3/22.png);
+}
+.s2004bottom_left{
  display: block;
  width: 200px;
  height: 100px;
@@ -843,21 +853,21 @@ p{word-wrap:break-word}
  
  
 }
-.bottom_left span{
+.s2004bottom_left span{
   color: #fff;
 }
-.bottom_right{
+.s2004bottom_right{
   display: block;
   width: 100px;
   height: 100px;
   float: left;
   padding: 1rem;
 }
-.bottom_top{
+.s2004bottom_top{
   display: block;
   text-align: center;
 }
-.bottom_down{
+.s2004bottom_down{
   text-align: center;
   font: 3rem "Microsoft Yahei";
 }
@@ -882,14 +892,17 @@ p{word-wrap:break-word}
 
 
 /* 底部form样式 */
-.btm_div{
+.s2004btm_div{
   background: #365712;
 
 }
-.bottom_form{
+.s3004btm_div{
+  background: #761983;
+}
+.s2004bottom_form{
   margin:2rem 0;
 }
-.form_submit a{
+.s2004form_submit a{
   display: block;
   text-align: center;
   font-size: 1.5rem;
@@ -897,11 +910,11 @@ p{word-wrap:break-word}
   background: #db8000;
   color: #fff;
 }
-.form_submit a:hover{
+.s2004form_submit a:hover{
   color: #db8000;
   background: #fff;
 }
-.form_name::before{
+.s2004form_name::before{
   font-family: icon;
   font-size: 21px;
   content: '\e003';
@@ -909,7 +922,7 @@ p{word-wrap:break-word}
   margin-top: 8px;
   margin-left: 7px;
 }
-.form_phone::before{
+.s2004form_phone::before{
   font-family: icon;
   font-size: 32px;
   content: '\e017';
@@ -917,7 +930,7 @@ p{word-wrap:break-word}
   margin-top: -2px;
   margin-left: 8px;
 }
-.form_phone .getlogon{
+.s2004form_phone .s2004getlogon{
   position: absolute;
   right: 0;
   height: 2rem;
@@ -926,7 +939,7 @@ p{word-wrap:break-word}
   padding-left: 2rem;
   display: block;
 }
-.form_phone .getlogon::before{
+.s2004form_phone .s2004getlogon::before{
   font-family: icon;
   font-size: 20px;
   content: '\e011';
@@ -934,7 +947,7 @@ p{word-wrap:break-word}
   margin-top: -4px;
   margin-left: -27px;
 }
-.btm_div input{
+.s2004btm_div input{
   border:0;
   outline: 0;
   width: 100%;
@@ -967,3 +980,405 @@ body a:hover{
 /* .top-img2 {
   top: 4000px;
 } */ 
+.s3001_body *{
+  color: rgb(118, 25, 131);
+}
+.s3001container{
+  background-image: url(../src/img3/bg3.jpg);
+
+}
+
+/* 第一个title大标题 默认样式 */
+.s3002title_1 h1{
+  font:2rem "Microsoft Yahei";
+}
+
+/* 第一个title大标题 媒体查询 */
+@media screen and (min-width:768px){
+  .s3002title_1 h1{
+    font-size: 4rem;
+  }
+} 
+@media screen and (max-width:768px){
+  .s3002title_1{
+    padding-top: 100px;
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .s3002title_1{
+    padding-top: 180px;
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .s3002title_1{
+    padding-top: 200px;
+    padding-left: 140px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+
+  .s3002title_1{
+    padding-top: 240px;
+    padding-left: 160px;
+  }
+}
+/*  第一个title大标题下的span 媒体查询*/
+.s3002title_1 span{
+  display: block;
+  color: #fff;
+  background: #0a6e6e;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:768px){
+  .s3002title_1 span{
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+  }
+}
+/* 标题1下的 span 媒体查询 */
+@media screen and (min-width:768px) {
+  .s3002title_1 span{
+    width: 150px;
+    height: 50px;
+    font-size: 3rem;
+    line-height: 50px;  }
+}
+/* 中三栏 不规则梯形 */
+/* 中三栏的媒体查询 */
+@media screen and (max-width:768px){
+  .s3002mid_1{
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .s3002mid_2{
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+  .s3002mid_3{
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .s3002mid_1{
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .s3002mid_2{
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+  .s3002mid_3{
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .s3002mid_1{
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-bottom: 60px;
+    
+  }
+  .s3002mid_2{
+    padding-left: 80px;
+    padding-bottom: 60px;
+  }
+  .s3002mid_3{
+    padding-left: 60px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+  .s3002mid_1{
+    padding-top: 120px;
+    padding-bottom: 80px;
+  
+  }
+  .s3002mid_2{
+    padding-left: 100px;
+    padding-bottom: 80px;
+  }
+  .s3002mid_3{
+    padding-left: 70px;
+  }
+}
+/* 中三栏左侧img区域 div */
+.s3002mid_left{
+  float: left;
+  display: block;
+  padding-top: 40px;
+}
+.s3002mid_right{
+  float: left;
+  width: 60%;
+  box-shadow:  0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.s3002mid_left img{
+  display: block;
+  float: right;
+}
+/* 中三栏右侧 div 子元素样式*/
+.s3002mid_right h2{
+  padding-bottom: 10px;
+  border-bottom: 4px solid #0a6e6e;
+}
+.s3002mid_right::before{
+  display: block;
+  width: 13px;
+  height: 13px;
+  content: "";
+  border-radius: 50%;
+  background: #0a6e6e;
+  position: absolute;
+  top: 20px;
+  margin-left: -33px;
+}
+@media screen and (max-width:768px){
+  .s3002mid_right::before{
+    top: 10px;
+    margin-left: 0px;
+  }
+}
+/*   中三栏右侧 div 子元素媒体查询*/
+@media screen and (max-width:768px){
+  .s3002mid_right h2{
+    font-size: 2rem;
+  }
+  .s3002mid_right{
+    width: 60%;
+    padding: 10px;
+  }
+  .s3002mid_left img{
+    width: 150px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+  .row .s3002mid_right{
+    padding: 60px 40px 50px 50px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .row .s3002mid_right{
+    padding: 70px 40px 50px 50px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+  .row .s3002mid_right{
+     padding: 90px 40px 50px 50px;
+  }
+}
+/* 第2/3个大 title */
+.s3002mid_right h2{
+  font:2rem "Microsoft Yahei";
+}
+.s3002title_2 h1{
+  font: 3rem "Microsoft Yahei";
+}
+@media screen and (min-width:992px){
+  .s3002title_2 h1{
+    font-size: 4rem;
+  }
+}
+/* 第2个title大标题 媒体查询 */
+@media screen and (min-width:1240px){
+  .s3002mid_right  h2{
+    font-size: 2.5rem;
+  }
+} 
+@media screen and (max-width:768px){
+  .s3002title_2{
+    padding-top: 50px;
+    padding-left: 400px;
+  }
+  .s3002title_2 h1{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .s3002title_2{
+    padding-top: 80px;
+    padding-left: 360px;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .s3002title_2{
+    padding-top: 120px;
+    padding-left: 500px;
+  }
+}
+ @media screen and (min-width: 1240px) {
+
+  .s3002title_2{
+    padding-top: 200px;
+    padding-left: 600px;
+  }
+}
+/*  第2个title大标题下的span 媒体查询*/
+.s3002title_2 span{
+  display: block;
+  color: #fff;
+  background: #0a6e6e;
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:768px){
+  .s3002title_2 span{
+    width: 100px;
+    height: 30px;
+    font-size: 2rem;
+  }
+}
+/* 标题2下的 span 媒体查询 */
+@media screen and (min-width:768px) {
+  .s3002title_2 span{
+    width: 150px;
+    height: 50px;
+    font-size: 3rem;
+    line-height: 50px;  }
+}
+/*中下三栏媒体查询 */
+@media screen and (max-width:768px){
+  .s3002mid_bottoms{
+    padding-top:30px;
+    padding-left: 200px;
+   
+   }
+   .s3002mid_bottom1{
+     padding-top: 50px;
+     padding-left: 120px;
+   
+   }
+   .s3002mid_bottom2{
+     padding-top: 50px;
+     padding-left: 50px;
+   
+   }
+}
+@media screen and (min-width:768px) and (max-width: 992px ){
+  .s3002mid_bottoms{
+    padding-top:30px;
+    padding-left: 200px;
+   
+   }
+   .s3002mid_bottom1{
+     padding-top: 50px;
+     padding-left: 120px;
+   
+   }
+   .s3002mid_bottom2{
+     padding-top: 50px;
+     padding-left: 50px;
+   
+   }
+}
+@media screen and (min-width:992px) and (max-width:1240px ){
+  .s3002mid_bottoms{
+    padding-top:30px;
+    padding-left: 400px;
+   
+   }
+   .s3002mid_bottom1{
+     padding-top: 50px;
+     padding-left: 330px;
+   
+   }
+   .s3002mid_bottom2{
+     padding-top: 50px;
+     padding-left: 200px;
+   
+   }
+}
+ @media screen and (min-width: 1240px) {
+.s3002mid_bottoms{
+ padding-top:30px;
+ padding-left: 480px;
+
+}
+.s3002mid_bottom1{
+  padding-top: 50px;
+  padding-left: 270px;
+
+}
+.s3002mid_bottom2{
+  padding-top: 50px;
+  padding-left: 100px;
+
+}
+}
+.s3002bg_fff{
+  display: block;
+  width: 320px;
+  height: 240px;
+  padding-left: 10px;
+  padding-top: 20px;
+  background: #fff;
+}
+
+
+.s3002bottom_div1{
+  position: relative;
+  display: block;
+}
+
+.s3002bottom_div1::before{
+  display: block;
+  background-image: url(../src/img3/17.png);
+  content: "";
+  width: 63px;
+  height: 106px;
+  background-size: cover;
+  z-index: 1;
+  background-color: #fff;
+  position: absolute;
+  top: -7px;
+  left: -6px;
+}
+.s3002bottom_div1{
+  display: block;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+  padding-left: 70px;
+  background: #fff;
+}
+.s3002bottom_div1 span,p{
+  float: left;
+
+}
+
+.s3002bottom_div1 p{
+  letter-spacing: 2px;
+  position: absolute;
+  margin-top: 42px;
+  margin-left: -36px;
+  line-height: 2rem;
+}
+.s3002hr3{
+  display: block;
+  border-bottom: 2px solid #761983;
+  height: 2px;
+  width: 24px;
+  float: left;
+  margin-bottom: 10px;
+}
+.s3002s_span1{
+  margin-top: 6px;
+  margin-left: -24px;
+}
+.s3002bottom_div2::before{
+  background-image: url(../src/img3/18.png);
+}
+.s3002bottom_div3::before{
+  background-image: url(../src/img3/19.png);
+}
+/* 左下三栏样式 */
+.s3003bottom_3{
+  padding-left: 50px;
+  padding-bottom: 70px;
+ 
+}
