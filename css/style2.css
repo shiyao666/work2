@@ -22,9 +22,11 @@ p{word-wrap:break-word}
   background-repeat: repeat-y;
   background-size: contain;
   z-index: -1;
+
 }
 .s2001_container{
   background-image: url(../src/img3/bg2.jpg);
+  background-size: cover;
 }
 
 /* s2001_nav 部分 右上角logo */
@@ -100,9 +102,10 @@ p{word-wrap:break-word}
     padding-left: 60px;
     padding-top: 120px;
 }
+
 /* 最上边的左边、右边和下中边div 样式 */
 .s2002top_left,.s2002top_center,.s2002top_right{
-    display: block;
+    display: none;
     width: 42%;
     box-shadow: 0px 0px 3px 3px  rgba(0, 0, 0, 0.3);
     padding: 20px 20px 30px 40px;
@@ -158,6 +161,7 @@ p{word-wrap:break-word}
 }
 .s2002top_center{
     margin: auto;
+
 }
 /* 第一个大title */
 .s2002title_1 span {
@@ -329,6 +333,7 @@ p{word-wrap:break-word}
 
     .s2002top_left,.s2002top_right{
         float: left;
+        display: none;
     }
     .s2002mid{
         padding-left: 80px;
@@ -397,7 +402,54 @@ p{word-wrap:break-word}
   background: #fff;
 }
 
+.img {
+  display: none;
+  position: fixed;
+  background: #e6e6e6;
+  right: 100px;
+  bottom: 150px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+/* .img{
 
+  display: block;
+  left: 103px;
+  top: 12px;
+  margin-right: 3px;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 12px;
+  border-left-width: 0;
+  border-right-color: #e5e5e5;
+  -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
+} */
+.img{
+  display: block;
+  width: 0;
+  height: 0;
+  border:50px solid transparent; 
+  border-bottom-color:#db8000;
+  background:transparent;
+}
+.img span{
+  display: block;
+  width: 40px;
+  height: 80px;
+  
+  color: 20px;
+  background-color: #db8000;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  left: -20px;
+}
 
 
 
@@ -781,7 +833,7 @@ p{word-wrap:break-word}
  .s2003right_divs::after{
  width: 54px;
  height: 62px;
- background-image: url(../src/img3/bgsmall.png);
+ /* background-image: url(../src/img3/21@05.png); */
  }
   /* 右侧第2个div */
  .s2003right_div1::before{
@@ -907,7 +959,7 @@ p{word-wrap:break-word}
   text-align: center;
   font-size: 1.5rem;
   padding:1rem;
-  background: #db8000;
+  background: #0a6e6e;
   color: #fff;
 }
 .s2004form_submit a:hover{
